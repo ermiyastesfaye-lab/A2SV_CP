@@ -14,5 +14,5 @@ class Solution:
             if(left.val == right.val):
                 return traverse(left.left, right.right) and traverse(left.right, right.left)
             else:
-                return 
+                return False
         return traverse(root.left, root.right)
